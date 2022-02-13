@@ -21,7 +21,7 @@ Van a tener que crear las rutas para mostrar los characters y las species. Solo 
 
 En esta ruta haran dos gets y un post. Tendran que traer todos los personajes que les brinda esa url, deberan traer su id, nombre, especie, genero e imagen. filtrarlos por nombre, genero y especie.
 
-En el post se tendria que poder crear un personaje nuevo pasandole por body el nombre, la especie, el genero y la imagen. Habra que validar que se pase todas las propiedades por body, sino tirar un mensaje de error, y ademas, que la especie de ese nuevo personaje exista (para esto tendran que tener la ruta de species completa).
+En el post se tendria que poder crear un personaje nuevo pasandole por body el nombre, la especie, el genero y la imagen. Habra que validar que se pase todas las propiedades por body, sino tirar un mensaje de error, y ademas, que la especie de ese nuevo personaje exista (para esto tendran que tener la ruta de species completa). Fijarse que el id ya esta definido y a medida que se van creando los personajes este debera ir aumentando.
 
 Y por ultimo tendran que, a traves de params, acceder al id de un personaje en particular y traer solo su informacion.
 

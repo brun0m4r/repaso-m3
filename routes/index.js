@@ -7,6 +7,7 @@ module.exports = router;
 // estos arreglos
 let charactersCreated = [];
 let speciesCreated = [];
+let id = 21;
 
 // escriban sus rutas acá o en las rutas modularizadas
 // siéntanse libres de dividir entre archivos si lo necesitan
