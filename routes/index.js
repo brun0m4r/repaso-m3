@@ -3,10 +3,5 @@ const express = require('express');
 const router = express.Router();
 module.exports = router;
 
-// al no haber base de datos los personajes y especies creados se deberan guardar en
-// estos arreglos
-let charactersCreated = [];
-let speciesCreated = [];
-
-// escriban sus rutas acá o en las rutas modularizadas
+// escriban sus rutas acá
 // siéntanse libres de dividir entre archivos si lo necesitan
