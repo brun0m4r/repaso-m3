@@ -17,13 +17,12 @@ const getCharacters = async () => {
             image: r.image
         };
     });
-    return apiInfo;
+    return [...apiInfo, ...created];
 }
 
 router.get('/', async (req, res) => {
     const { name, gender, species } = req.query;
-    const characters = await getCharacters();
-    const allCharacters = [...characters, ...created];
+    const allCharacters = await getCharacters();
     if(name) {
         let character = allCharacters.filter(c => c.name.toLowerCase().includes(name.toLowerCase()));
         character.length
@@ -74,7 +73,7 @@ router.post('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
-    const characters = await getCharactersz();
+    const characters = await getCharacters();
     const character = characters.filter(c => c.id == id);
     character.length
     ? res.status(200).send(character)
